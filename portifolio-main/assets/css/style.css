@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --text-primary: #fff;
+    --text-secudary: #black;
+    --font-heading: 'Poppins';
+    --font-default: 'Montserrat';
+}
+
+html{
+    font-size: 62,5%;
+}
+
+body{
+    font-family: var(--font-default);
+    color: var(--text-primary);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    background-image: url("../images/hero.jpg");
+    height: 100vh;
+    background-size: cover;
+    padding: 40em 2.5rem;
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: var(--font-heading);
+}
+
+span{
+    font-size: 1.5rem;
+}
+
+.button{
+    background:linear-gradient(90deg, #C33764, #1D2671);
+    padding: 0.5rem 1.5rem;
+    border-radius: 3.5px;
+    color: #fff;
+    font-size: 1rem;
+    font-family: var(--font-default);
+    text-decoration: none;
+}
+
+img.avatar{
+    border-radius: 50%;
+}
+
+.section-presentation{
+    display: flex;
+    color:var(--text-secudary);
+    gap: 2rem;
+}
+
+.section-presentation div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
