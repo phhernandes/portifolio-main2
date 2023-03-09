@@ -8,7 +8,7 @@
 
 :root{
     --text-primary: #fff;
-    --text-secudary: #black;
+    --text-secudary: #000;
     --font-heading: 'Poppins';
     --font-default: 'Montserrat';
 }
@@ -61,6 +61,7 @@ img.avatar{
     display: flex;
     color:var(--text-secudary);
     gap: 2rem;
+    
 }
 
 .section-presentation div{
