@@ -30,7 +30,8 @@ header{
     background-image: url("../images/hero.jpg");
     height: 100vh;
     background-size: cover;
-    padding: 40em 2.5rem;
+    padding-top: 30rem;
+    padding-left: 6rem;
 }
 
 h1{
@@ -42,6 +43,7 @@ h1{
 span{
     font-size: 1.5rem;
 }
+
 
 .button{
     background:linear-gradient(90deg, #C33764, #1D2671);
@@ -61,7 +63,7 @@ img.avatar{
     display: flex;
     color:var(--text-secudary);
     gap: 2rem;
-    
+
 }
 
 .section-presentation div{
