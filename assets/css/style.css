@@ -23,13 +23,43 @@ body{
     background-color: #05152F;
 }
 
+.loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.spiner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 16px solid #999;
+    border-top: 16px solid#fd2e70;
+    animation: spin 3s infinite;
+}
+
+.hide{
+    display: none;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
 
 #hamburger{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    height: 3rem;
-    width: 3rem;
+    height: 2.5rem;
+    width: 2.5rem;
     position: fixed;
     top: 2rem;
     right: 2rem;
@@ -91,6 +121,10 @@ header{
     position: relative;
 }
 
+header h1{
+    font-size: clamp (2rem,5vw,2rem);
+}
+
 header::before{
     content:'';
     width: 100%;
@@ -127,7 +161,7 @@ span{
 .button{
     background:linear-gradient(90deg, #C33764, #1D2671);
     padding: 0.75rem 1.75rem;
-    border-radius: 3.5px;
+    border-radius: 2rem;
     color: #fff;
     font-size: 1.3rem;
     font-family: var(--font-default);
@@ -212,9 +246,10 @@ img.avatar{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     background-image: url();
     background-size: cover;
+    margin-top: 17rem;
+    margin-bottom: 17rem;
 }
 
 #section-budget form{
@@ -240,4 +275,13 @@ img.avatar{
 
 #section-budget form output{
     grid-column: 2;
+}
+
+@media (max-width: 980px) {
+    #section-projects ul{
+        flex-direction: column;
+    }
+    .large-only{
+        display:none;
+    }
 }
