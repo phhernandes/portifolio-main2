@@ -280,6 +280,7 @@ img.avatar{
 @media (max-width: 980px) {
     #section-projects ul{
         flex-direction: column;
+        align-items: center;
     }
     .large-only{
         display:none;
